@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reply_blue_800"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:background="@color/reply_blue_600"
+        android:layout_height="150dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="150dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="50dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/questionTv"
+                android:text="Hi man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/background_shape"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:id="@+id/timeTv"
+                    android:text="20"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/left_background_shape"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/pointTv"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.chip.Chip
+            app:layout_constraintTop_toBottomOf="@id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:id="@+id/optionOneTv"
+            android:text="Time"
+            android:checked="true"
+            app:chipIcon="@drawable/ic_baseline_copyright_24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.chip.Chip
+            app:layout_constraintTop_toBottomOf="@id/optionOneTv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:id="@+id/optionTwoTv"
+            android:text="Time"
+            app:chipIcon="@drawable/ic_baseline_copyright_24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.chip.Chip
+            app:layout_constraintTop_toBottomOf="@id/optionTwoTv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:id="@+id/optionThreeTv"
+            android:text="Time"
+            app:chipIcon="@drawable/ic_baseline_copyright_24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.chip.Chip
+            app:layout_constraintTop_toBottomOf="@id/optionThreeTv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:id="@+id/optionFourTv"
+            android:text="Time"
+            app:chipIcon="@drawable/ic_baseline_copyright_24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextBt"
+        app:layout_constraintTop_toBottomOf="@id/optionFourTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Next"
+        android:backgroundTint="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
